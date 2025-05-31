@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Book - goo food</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div class="header-container">
+        <div class="logo-section">
+          <img src="https://img.freepik.com/premium-vector/good-food-logo-template_79169-17.jpg" alt="Cafe Logo"
+            class="logo">
+          <h1>Goo food - Recipe Book</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Recipe Form -->
+    <div class="product-form" id="productForm">
+      <form id="recipeForm">
+        <input type="text" id="title" placeholder="Recipe Title" required /><br>
+        <textarea id="ingredients" placeholder="Ingredients" required></textarea><br>
+        <textarea id="instructions" placeholder="Instructions"></textarea><br>
+        <input type="text" id="cuisine" placeholder="Cuisine Type" /><br>
+        <button type="submit">Add Recipe</button>
+      </form>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="search-filter">
+      <input type="text" id="search" placeholder="Search by title or ingredients..." />
+      <select id="filterCuisine">
+        <option value="">All Cuisines</option>
+      </select>
+    </div>
+
+    <!-- Recipe List -->
+    <div class="product-list" id="recipeList"></div>
+
+  </div>
+
+  <script src="ex.js"></script>
+</body>
+
+</html>
